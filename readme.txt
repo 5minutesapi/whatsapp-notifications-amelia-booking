@@ -1,4 +1,4 @@
-=== WhatsApp Notifications for Amelia Booking - Reminders & Alerts ===
+=== 5MinutesAPI Notifications for Amelia Booking - Reminders & Alerts ===
 Contributors: 5minutesapi
 Tags: amelia whatsapp, whatsapp notifications, amelia booking alerts, appointment reminders, twilio alternative, whatsapp api
 Requires at least: 5.0
