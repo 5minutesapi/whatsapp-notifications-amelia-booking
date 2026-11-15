@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WhatsApp Notifications for Amelia Booking - Reminders & Alerts
+ * Plugin Name: 5MinutesAPI Notifications for Amelia Booking - Reminders & Alerts
  * Plugin URI: https://5minutesapi.com
  * Description: Automate official Meta WhatsApp appointment confirmations and reminders for Amelia Booking. The most cost-effective Others alternative with Zero Markup.
  * Version: 1.0.0
