@@ -5,7 +5,7 @@
  * Description: Automate appointment confirmations and reminders for Amelia Booking using 5MinutesAPI. The most cost-effective Twilio alternative.
  * Version: 1.0.0
  * Author: 5MinutesAPI
- * Author URI: https://5minutesapi.com
+ 
  * Text Domain: 5minutesapi-amelia-notifications
  */
 
