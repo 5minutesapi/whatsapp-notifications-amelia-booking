@@ -1,29 +1,29 @@
 <?php
 /**
- * Plugin Name: 5MinutesAPI Notifications for Amelia Booking - Reminders & Alerts
-
- * Description: Automate official Meta WhatsApp appointment confirmations and reminders for Amelia Booking. The most cost-effective Others alternative with Zero Markup.
+ * Plugin Name: 5MinutesAPI Notifications for Amelia Booking
+ * Plugin URI: https://5minutesapi.com
+ * Description: Automate appointment confirmations and reminders for Amelia Booking using 5MinutesAPI. The most cost-effective Twilio alternative.
  * Version: 1.0.0
  * Author: 5MinutesAPI
  * Author URI: https://5minutesapi.com
- * Text Domain: whatsapp-notifications-amelia
+ * Text Domain: 5minutesapi-amelia-notifications
  */
 
 if (!defined('ABSPATH')) {
     exit; // Security Check
 }
 
-
+// 1. Create the Settings Menu (Traffic & Money Trap)
 add_action('admin_menu', 'fivemin_amelia_menu');
 function fivemin_amelia_menu() {
-    add_options_page('Amelia WhatsApp', 'Amelia WhatsApp', 'manage_options', 'fivemin-amelia-whatsapp', 'fivemin_amelia_settings_page');
+    add_options_page('5MinutesAPI Amelia', '5MinutesAPI Amelia', 'manage_options', 'fivemin-amelia-alerts', 'fivemin_amelia_settings_page');
 }
 
 function fivemin_amelia_settings_page() {
     ?>
     <div class="wrap" style="background:#fff; padding:30px; border:1px solid #e2e8f0; border-radius:12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-        <h1 style="color:#0f172a; font-weight:900; font-size:24px;">🚀 WhatsApp Notifications for Amelia Booking</h1>
-        <p style="font-size:15px; color:#475569; margin-bottom:20px;">Stop no-shows. Connect Amelia to the Official WhatsApp API instantly.</p>
+        <h1 style="color:#0f172a; font-weight:900; font-size:24px;">🚀 5MinutesAPI Notifications for Amelia Booking</h1>
+        <p style="font-size:15px; color:#475569; margin-bottom:20px;">Stop no-shows. Connect Amelia to our high-speed Official Meta API Gateway instantly.</p>
         
         <div style="background:#f8fafc; border-left:4px solid #25D366; padding:20px; margin-bottom:25px; border-radius:4px;">
             <strong style="color:#0f172a;">Step 1:</strong> Get your Master API Key from <a href="https://5minutesapi.com/dashboard" target="_blank" style="color:#10a37f; font-weight:bold; text-decoration:none;">5MinutesAPI.com</a> (Zero Markup API).<br><br>
@@ -42,7 +42,7 @@ function fivemin_amelia_settings_page() {
                 </td>
                 </tr>
             </table>
-            <?php submit_button('Save & Activate WhatsApp', 'primary', 'submit', true, ['style' => 'background:#0f172a; color:#fff; border:none; padding:10px 24px; border-radius:6px; font-weight:bold; cursor:pointer;']); ?>
+            <?php submit_button('Save & Activate Alerts', 'primary', 'submit', true, ['style' => 'background:#0f172a; color:#fff; border:none; padding:10px 24px; border-radius:6px; font-weight:bold; cursor:pointer;']); ?>
         </form>
     </div>
     <?php
@@ -53,10 +53,10 @@ function fivemin_amelia_register_settings() {
     register_setting('fivemin_amelia_settings_group', 'fivemin_api_key');
 }
 
-// 2. Hook into Amelia Booking to Send WhatsApp Alert
-add_action('AmeliaBookingAdded', 'fivemin_send_whatsapp_amelia_alert', 10, 2);
+// 2. Hook into Amelia Booking to Send Alert
+add_action('AmeliaBookingAdded', 'fivemin_send_api_amelia_alert', 10, 2);
 
-function fivemin_send_whatsapp_amelia_alert($reservationObject, $bookingData) {
+function fivemin_send_api_amelia_alert($reservationObject, $bookingData) {
     $api_key = get_option('fivemin_api_key');
     if (empty($api_key)) return;
 
