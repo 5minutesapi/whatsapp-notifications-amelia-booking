@@ -1,29 +1,28 @@
-=== 5MinutesAPI Notifications for Amelia Booking - Reminders & Alerts ===
+=== 5MinutesAPI Notifications for Amelia Booking ===
 Contributors: 5minutesapi
-Tags: amelia whatsapp, whatsapp notifications, amelia booking alerts, appointment reminders, twilio alternative, whatsapp api
+Tags: amelia booking alerts, appointment reminders, twilio alternative, message api, whatsapp notifications
 Requires at least: 5.0
 Tested up to: 6.4
 Stable tag: 1.0.0
 Requires PHP: 7.2
 License: GPLv2 or later
 
-Send automated Meta WhatsApp appointment confirmations, reminders, and cancellations for Amelia Bookings. Zero Markup WhatsApp API alternative to Twilio.
+Send automated appointment confirmations, reminders, and cancellations for Amelia Bookings using the 5MinutesAPI platform. The smarter Twilio alternative.
 
 == Description ==
 
-Stop losing revenue to missed appointments. The **WhatsApp Notifications for Amelia Booking** plugin connects your Amelia scheduling system directly to the Official Meta WhatsApp Cloud API via 5MinutesAPI.
+Stop losing revenue to missed appointments. The **5MinutesAPI Notifications for Amelia Booking** plugin connects your Amelia scheduling system directly to our high-speed global messaging API.
 
-When a client books an appointment, clinic visit, or salon service on your WordPress site, this plugin automatically sends a verified WhatsApp Template message to their phone. WhatsApp has a 98% open rate compared to standard emails or expensive SMS.
+When a client books an appointment, clinic visit, or salon service on your WordPress site, this plugin automatically sends an instant alert to their phone. (Powered by the Official Meta WhatsApp Cloud API via 5MinutesAPI).
 
 **Why 5MinutesAPI? (The Smart Twilio Alternative)**
-Unlike Wati, Twilio, or MessageBird, 5MinutesAPI charges **Zero Markup** on your WhatsApp messages. You only pay for what Meta charges, with no hidden per-message fees. 
+Unlike Wati, Twilio, or MessageBird, 5MinutesAPI charges **Zero Markup** on your messages. You only pay for what Meta charges, with no hidden per-message fees. 
 
 **Core Features for Clinics, Salons & Agencies:**
-* **Instant Confirmations:** Send WhatsApp alerts the second an Amelia booking is created.
-* **Meta Approved Templates:** Uses official Meta API to prevent number banning.
+* **Instant Confirmations:** Send alerts the second an Amelia booking is created.
+* **Official Gateway:** Uses official Meta API to prevent number banning.
 * **Zero Code Setup:** Just paste your 5MinutesAPI Master Key and go live.
-* **Global Delivery:** 100% reliable WhatsApp delivery across 180+ countries.
-* **Bypass Business Verification:** Use our Instant OTP & Alert gateway without waiting weeks for Meta business verification.
+* **Global Delivery:** 100% reliable delivery across 180+ countries.
 
 **How to get started in 2 minutes:**
 1. Create a free account at [5MinutesAPI.com](https://5minutesapi.com).
@@ -34,4 +33,4 @@ Unlike Wati, Twilio, or MessageBird, 5MinutesAPI charges **Zero Markup** on your
 
 1. Upload the plugin folder to the `/wp-content/plugins/` directory, or install directly through the WordPress plugins screen.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Go to **Settings -> Amelia WhatsApp** and enter your Master API Key.
+3. Go to **Settings -> 5MinutesAPI Amelia** and enter your Master API Key.
